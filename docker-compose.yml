@@ -1,0 +1,44 @@
+version: '3'
+services:
+  ## SERVER ##
+  server:
+    depends_on:
+      - db
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    environment:
+      MONGO_URL: 'mongodb://zoo-db/zoo'
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    networks:
+      - client-network
+      - zoo-db-network
+    command: ['node', 'src/server.js']
+    container_name: zoo-server
+  #############
+  ## CLIENT ##
+ ## MONGO ##
+  db:
+    container_name: zoo-db
+    image: mongo
+    volumes:
+      - zoo-db-data:/data/configdb
+      - zoo-db-data:/data/db
+    ports:
+      - "27018:27018"
+    expose:
+      - "27018"
+    networks:
+      - zoo-db-network
+
+
+volumes:
+  zoo-db-data:
+
+networks:
+  client-network:
+    driver: bridge
+  zoo-db-network:
+    driver: bridge
