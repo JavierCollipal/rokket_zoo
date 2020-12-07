@@ -1,3 +1,13 @@
+#client
+./client/node_modules
+./client/package-lock.json
+./client/build
+#server
+./server/node_modules
+./server/package-lock.json
+./server/built/
+#ide
+.idea
 # Logs
 logs
 *.log
