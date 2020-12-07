@@ -1,15 +1,18 @@
+import {Animal, AnimalModelT} from "../models/animal";
+import {ObjectId} from "mongoose";
+
 export default class AnimalService {
-  private animalModel: any
+  private animalModel: AnimalModelT;
   constructor(animalModel){
     this.animalModel = animalModel;
   }
-  async getAll(): Promise<any> {
-   return ["gato","perro","cocodrilo"]
+  async getAll(): Promise<Animal[]> {
+   return this.animalModel.find()
   }
-  async createOne(): Promise<any>{
-
+  async createOne(animal: Animal): Promise<Animal>{
+    return this.animalModel.create(animal)
   }
-  async deleteOne(): Promise<any> {
-
+  async deleteOne(id: ObjectId): Promise<any> {
+   return this.animalModel.deleteOne({ _id: id})
   }
 }

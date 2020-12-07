@@ -8,7 +8,7 @@ export interface Animal extends Document  {
   state: number
 }
 
-export type AnimalModel = Model<Animal>
+export type AnimalModelT = Model<Animal>
 
 export const animalSchema: Schema = new Schema({
   name: {
@@ -20,4 +20,5 @@ export const animalSchema: Schema = new Schema({
 })
 
 const AnimalModel = model<Animal>('Animal',animalSchema )
+
 export default AnimalModel

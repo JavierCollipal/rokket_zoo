@@ -1,8 +1,9 @@
 import express, { Request, Response } from 'express'
 import AnimalController from "../controllers/animal.controller";
 import AnimalService from "../services/animal.service";
+import AnimalModel from "../models/animal";
 
-const animalService = new AnimalService({});
+const animalService = new AnimalService(AnimalModel);
 const animalController = new AnimalController(animalService);
 
 const animalRouter = express.Router();
