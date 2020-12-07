@@ -7,7 +7,7 @@
     "build": "tsc",
     "compile": "npm run tsc",
     "dev": "nodemon src/server.ts",
-    "prod": "tsc && node ./build/server.js",
+    "prod": "node ./build/src/server.js",
     "test": "jest"
   },
   "author": "",

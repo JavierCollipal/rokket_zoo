@@ -6,7 +6,7 @@
 #server
 ./server/node_modules
 ./server/package-lock.json
-./server/built/
+./server/build/
 ./server/.env
 #ide
 .idea

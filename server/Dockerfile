@@ -13,7 +13,7 @@ RUN npm run build
 FROM node:12-alpine
 WORKDIR /app
 #copy things from build stage
-COPY --from=build /app/dist /app/
+COPY --from=build /app/build /app/
 COPY package.json /app/package.json
 #rerun npm install
 RUN npm install --silent
