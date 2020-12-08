@@ -4,8 +4,8 @@ export interface Animal extends Document  {
   name: string,
   age: number,
   type: string,
-  // 1-alive 2 -dead
-  state: number
+  //vivo, muerto
+  state: string
 }
 
 export type AnimalModelT = Model<Animal>

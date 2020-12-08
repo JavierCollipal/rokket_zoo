@@ -31,7 +31,7 @@ export const fetchAnimalsAsync = () => {
 		try {
 			const response = await animalApi.fetchAnimals();
 			const { data } = response;
-			disptach(fetchAnimals(data));
+			disptach(fetchAnimals(data.animals));
 		} catch (e) {
 			console.error(e);
 		}
