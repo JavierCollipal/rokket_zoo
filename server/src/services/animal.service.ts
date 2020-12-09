@@ -3,7 +3,7 @@ import {ObjectId} from "mongoose";
 
 export default class AnimalService {
   private animalModel: AnimalModelT;
-  constructor(animalModel){
+  constructor(animalModel: AnimalModelT){
     this.animalModel = animalModel;
   }
   async getAll(): Promise<Animal[]> {
