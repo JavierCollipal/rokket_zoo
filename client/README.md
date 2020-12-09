@@ -11,7 +11,6 @@ del reducer para manejar llamadas asincronas, estoy ocupando redux-thunk.
 
 En la parte de diseño, estoy ocupando la libreria de material UI.
 # Instalación
- 1- cd client <br>
  2- npm install <br>
  3- npm run start
 

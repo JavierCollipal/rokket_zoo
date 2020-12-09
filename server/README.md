@@ -11,10 +11,14 @@ Controller se encarga de obtener respuesta de Service, y manejar los objetos req
 Service se encarga de obtener respuesta de Model, y aplicar reglas de negocio. <br>
 
 Model se encarga de transparentar la collection que estamos manipulando, entregando metodos CRUD o metodos personalizados de consultas.
-# Instalación
-1- cd client <br>
+
+# Instalación local
 2- npm install <br>
-3- npm run start
+3- npm run dev 
+
+# Instalación prod
+1- npm run build
+2- npm run prod
 
 # Testing
 Jest está siendo ocupado como el test runner base, y supertest es una libreria que nos apoya en el testing e2e.
