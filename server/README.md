@@ -16,5 +16,11 @@ Model se encarga de transparentar la collection que estamos manipulando, entrega
 2- npm install <br>
 3- npm run start
 
+# Testing
+Jest está siendo ocupado como el test runner base, y supertest es una libreria que nos apoya en el testing e2e.
+
+1-npm install
+2-npm run test
+
 # Información Docker
 Este Dockerfile genera un build del servidor, en la primera stage genera un build del proyecto y en la segunda stage copia el build generado en el contenedor que usaremos para prod. <br>
