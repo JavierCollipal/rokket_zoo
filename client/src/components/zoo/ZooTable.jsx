@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+	Button,
 	Table,
 	TableBody,
 	TableCell,
@@ -9,7 +10,7 @@ import {
 	TableRow,
 } from '@material-ui/core';
 
-export const ZooTable = ({ animals }) => {
+export const ZooTable = ({ animals, deleteAnimal }) => {
 	return (
 		<div>
 			<TableContainer>
@@ -31,6 +32,11 @@ export const ZooTable = ({ animals }) => {
 								<TableCell align="right">{row.age}</TableCell>
 								<TableCell align="right">{row.type}</TableCell>
 								<TableCell align="right">{row.state}</TableCell>
+								<TableCell align="right">
+									<Button onClick={() => deleteAnimal(row._id)}>
+										Borrar Animal
+									</Button>
+								</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
