@@ -10,7 +10,7 @@ Redux es la libreria que está siendo usada para el manejo de estado y como comp
 del reducer para manejar llamadas asincronas, estoy ocupando redux-thunk.
 
 En la parte de diseño, estoy ocupando la libreria de material UI.
-# Instalación
+# Instalación local
  2- npm install <br>
  3- npm run start
 

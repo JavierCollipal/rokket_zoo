@@ -17,7 +17,7 @@ Model se encarga de transparentar la collection que estamos manipulando, entrega
 3- npm run dev 
 
 # Instalación prod
-1- npm run build
+1- npm run build <br>
 2- npm run prod
 
 # Testing
