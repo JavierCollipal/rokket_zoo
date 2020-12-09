@@ -19,6 +19,16 @@ services:
     container_name: zoo-server
   #############
   ## CLIENT ##
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - client-network
+    ports:
+      - 80:80
+    restart: always
+    container_name: zoo-client
  ## MONGO ##
   db:
     container_name: zoo-db
