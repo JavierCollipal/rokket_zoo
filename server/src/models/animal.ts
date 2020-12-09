@@ -1,6 +1,6 @@
-import { Schema, model, Model, Document } from 'mongoose'
+import {Schema, model, Model, Document} from 'mongoose'
 
-export interface Animal extends Document  {
+export interface Animal extends Document {
   name: string,
   age: number,
   type: string,
@@ -10,14 +10,12 @@ export interface Animal extends Document  {
 export type AnimalModelT = Model<Animal>
 
 export const animalSchema: Schema = new Schema({
-  name: {
-    type: String
-  },
-  age: { type: Number, default: 0 },
-  breed: { type: String },
-  type: { type: String }
+  name: { type: String },
+  age: {type: Number, default: 0 },
+  breed: {type: String },
+  type: {type: String }
 })
 
-const AnimalModel = model<Animal>('Animal',animalSchema )
+const AnimalModel = model<Animal>('Animal', animalSchema)
 
 export default AnimalModel
