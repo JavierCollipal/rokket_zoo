@@ -20,7 +20,8 @@ export const ZooTable = ({ animals, deleteAnimal }) => {
 							<TableCell>Nombre</TableCell>
 							<TableCell align="right">Edad</TableCell>
 							<TableCell align="right">Tipo</TableCell>
-							<TableCell align="right">Estado</TableCell>
+							<TableCell align="right">Raza</TableCell>
+							<TableCell align="right">Acciones</TableCell>
 						</TableRow>
 					</TableHead>
 					<TableBody>
@@ -31,7 +32,7 @@ export const ZooTable = ({ animals, deleteAnimal }) => {
 								</TableCell>
 								<TableCell align="right">{row.age}</TableCell>
 								<TableCell align="right">{row.type}</TableCell>
-								<TableCell align="right">{row.state}</TableCell>
+								<TableCell align="right">{row.breed}</TableCell>
 								<TableCell align="right">
 									<Button onClick={() => deleteAnimal(row._id)}>
 										Borrar Animal
