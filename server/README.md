@@ -1,16 +1,16 @@
 # Información General
-El servidor de rokket_zoo está desarrollado con Express y  Typescript.
+El servidor de rokket_zoo está desarrollado con Express y Typescript.
 
 # Arquitectura
 Typescript esta siendo usado como lenguaje base, express como framework api. <br>
 
-3-layers esta siendo ocupado como el patron de arquitectura de este proyecto. <br>
+3-layers está siendo ocupado como el patron de arquitectura de este proyecto. <br>
 
 Controller se encarga de obtener respuesta de Service, y manejar los objetos req,res. <br>
 
-Service se encarga de obtener respuesta de Model, y aplicar logica de negocio. <br>
+Service se encarga de obtener respuesta de Model, y aplicar reglas de negocio. <br>
 
-Model se encarga de transparentar la collection que estamos manipulando, suministrando metodos CRUD o metodos personalizados de consultas.
+Model se encarga de transparentar la collection que estamos manipulando, entregando metodos CRUD o metodos personalizados de consultas.
 # Instalación
 1- cd client <br>
 2- npm install <br>

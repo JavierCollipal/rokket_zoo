@@ -9,10 +9,11 @@ UseEffect y UseState fueron usados para darle estado y ciclos de vida. <br>
 Redux es la libreria que está siendo usada para el manejo de estado y como complemento
 del reducer para manejar llamadas asincronas, estoy ocupando redux-thunk.
 
+En la parte de diseño, estoy ocupando la libreria de material UI.
 # Instalación
  1- cd client <br>
  2- npm install <br>
  3- npm run start
 
-# Informacion Docker
+# Información Docker
 Este Dockerfile genera un build del cliente, para luego apoyarse con nginx y poder mostrar lo que se generó con npm run  build.
