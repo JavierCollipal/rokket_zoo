@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import { useForm } from 'react-hook-form';
-import { Input, MenuItem, Select, TextField } from '@material-ui/core';
+import { Input, TextField } from '@material-ui/core';
 
 export const ZooForm = ({ handleFormSubmit }) => {
 	const { register, handleSubmit } = useForm();
