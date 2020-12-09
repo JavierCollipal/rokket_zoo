@@ -34,7 +34,7 @@ export const ZooTable = ({ animals, deleteAnimal }) => {
 								<TableCell align="right">{row.type}</TableCell>
 								<TableCell align="right">{row.breed}</TableCell>
 								<TableCell align="right">
-									<Button onClick={() => deleteAnimal(row._id)}>
+									<Button onClick={() => deleteAnimal(row._id)} color="secondary">
 										Borrar Animal
 									</Button>
 								</TableCell>
